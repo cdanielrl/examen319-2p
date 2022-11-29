@@ -10,7 +10,7 @@ primesToA m = criba 3 (array (3,m) [(i,odd i) | i<-[3..m]]
        | otherwise = criba (p+2) a
 
 main = do
-    putStrLn "¿Cuantos elementos?: "
+    putStrLn "¿Limite?: "
     x <- getLine
     let n = read x :: Integer
     print (primesToA n)
